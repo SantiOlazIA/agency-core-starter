@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "system-ui", sans-serif;
+  --font-serif: "Playfair Display", "Georgia", serif;
+
+  /* Premium Organic Palette (Profile A Default) */
+  --color-primary: #1A1A1A;
+  /* Deep charcoal line text */
+  --color-secondary: #F8F5F2;
+  /* Warm off-white background */
+  --color-accent: #D97743;
+  /* Terracotta / Artisan Orange */
+  --color-muted: #8A8580;
+  /* Soft stone grey */
+
+  /* Mandatory Safety Padding variables to prevent Absolute Collisions */
+  --spacing-safe-nav: 6rem;
+}
+
+/* 
+ * --------------------------------------------------------------------------
+ * AGENCY MANDATE: THE ABSOLUTE COLLISION TRAP
+ * --------------------------------------------------------------------------
+ * Never use absolute decorative elements (e.g., side scroll lines) in the 
+ * exact same padding column (`left-6`) as standard flow contents. Short 
+ * screens will compress them together, resulting in a 1px artifact rendering bug. 
+ * If a decorative element overlaps standard UI, DELETE IT.
+ * --------------------------------------------------------------------------
+ */
+
+/* 
+ * AGENCY MANDATE: THE SCALE-X-0 BUG
+ * --------------------------------------------------------------------------
+ * Do not use `scale-x-0` with `origin-left` on hover overlays for buttons. 
+ * This causes a persistent 1px border clipping artifact in WebKit. 
+ * Use `hover:brightness-110` or `opacity` changes.
+ * --------------------------------------------------------------------------
+ */
+
+html,
+body,
+#root {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+@utility section-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  @variant md {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+/* Base Form Resets for OrderForm.tsx */
+input,
+textarea {
+  outline: none;
+}
