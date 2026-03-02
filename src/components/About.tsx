@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 const About = () => {
     return (
         <section id="about" className="py-24 md:py-32 bg-primary text-secondary">
-            <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
 
                 {/* Left Side: Typography */}
                 <motion.div
@@ -34,7 +34,7 @@ const About = () => {
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="w-full h-64 bg-secondary/10 rounded-xl flex items-center justify-center text-sm text-secondary/30"
+                        className="w-full aspect-[4/5] bg-secondary/10 rounded-xl flex items-center justify-center text-sm text-secondary/30"
                     >
                         [AI Placeholder 1]
                     </motion.div>
@@ -43,7 +43,7 @@ const About = () => {
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 0.8, delay: 0.4 }}
-                        className="w-full h-80 bg-secondary/5 rounded-xl flex items-center justify-center text-sm text-secondary/30 mt-8"
+                        className="w-full aspect-[3/4] bg-secondary/5 rounded-xl flex items-center justify-center text-sm text-secondary/30 mt-4 md:mt-8"
                     >
                         [AI Placeholder 2]
                     </motion.div>

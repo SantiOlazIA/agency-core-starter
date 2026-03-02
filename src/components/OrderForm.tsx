@@ -78,17 +78,17 @@ const OrderForm = ({ products = defaultProducts }: { products?: Product[] }) => 
                                     </div>
                                 </div>
 
-                                <div className="flex items-center gap-3 bg-primary rounded-full px-2 py-1 border border-secondary/20">
-                                    <button onClick={() => handleQuantity(p.id, -1)} className="w-8 h-8 flex items-center justify-center hover:text-accent transition-colors">-</button>
-                                    <span className="w-4 text-center text-sm">{quantities[p.id] || 0}</span>
-                                    <button onClick={() => handleQuantity(p.id, 1)} className="w-8 h-8 flex items-center justify-center hover:text-accent transition-colors">+</button>
+                                <div className="flex items-center gap-1 bg-primary rounded-full px-1 py-1 border border-secondary/20">
+                                    <button onClick={() => handleQuantity(p.id, -1)} className="w-11 h-11 flex items-center justify-center hover:text-accent transition-colors text-lg">-</button>
+                                    <span className="w-6 text-center text-sm">{quantities[p.id] || 0}</span>
+                                    <button onClick={() => handleQuantity(p.id, 1)} className="w-11 h-11 flex items-center justify-center hover:text-accent transition-colors text-lg">+</button>
                                 </div>
                             </div>
                         ))}
                     </div>
 
                     {/* Checkout Column */}
-                    <div className="space-y-6 bg-secondary/5 p-8 rounded-xl border border-secondary/10">
+                    <div className="space-y-6 bg-secondary/5 p-5 md:p-8 rounded-xl border border-secondary/10">
                         <h3 className="text-xl font-serif border-b border-secondary/20 pb-4">Details</h3>
 
                         <div>
