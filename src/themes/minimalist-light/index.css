@@ -4,11 +4,12 @@
   --font-sans: "Outfit", "system-ui", sans-serif;
   --font-serif: "Playfair Display", "Georgia", serif;
 
-  /* Organic Warm Palette — Profile A (food, artesanal, panadería, emprendimiento) */
-  --color-primary: #1A1A1A;     /* Deep charcoal — text, borders */
-  --color-secondary: #F8F5F2;   /* Warm off-white — background */
-  --color-accent: #D97743;      /* Terracotta / Artisan Orange */
-  --color-muted: #8A8580;       /* Soft stone grey — secondary text */
+  /* Minimalist Light — warm cream + near-black, rust accent */
+  /* Profile B Boutique: estudios creativos, diseño, consultoras */
+  --color-primary: #111110;   /* Near-black — text */
+  --color-secondary: #F8F7F4; /* Warm cream — background */
+  --color-accent: #D4622A;    /* Warm rust — CTA, highlights */
+  --color-muted: #8A8580;     /* Stone grey — secondary text */
 
   --spacing-safe-nav: 6rem;
 }

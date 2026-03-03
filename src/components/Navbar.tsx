@@ -1,15 +1,12 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import { CLIENT } from '../lib/client.config';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
-    const links = [
-        { href: '#about', label: 'Philosophy' },
-        { href: '#catalog', label: 'Catalog' },
-        { href: '#order', label: 'Order' },
-    ];
+    const links = CLIENT.navLinks;
 
     return (
         <>
@@ -21,7 +18,7 @@ const Navbar = () => {
             >
                 {/* Brand logo space - DO NOT bunch text too close */}
                 <div className="font-serif text-2xl tracking-wider text-primary">
-                    AGENCY <span className="text-accent italic">STUDIO</span>
+                    {CLIENT.brandName}
                 </div>
 
                 <nav className="hidden md:flex gap-8 text-sm tracking-widest uppercase text-primary/70">
